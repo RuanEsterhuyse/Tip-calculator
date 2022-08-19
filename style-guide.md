@@ -32,3 +32,11 @@ The designs were created to the following widths:
 
 - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
 - Weights: 400, 500, 700
+
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}

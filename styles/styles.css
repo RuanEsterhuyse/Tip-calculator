@@ -1,1 +1,318 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  padding: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.card .label__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.6rem 0;
+}
+
+.card label {
+  color: #5e7a7d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .error__msg {
+  color: lightcoral;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card .input__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.card .input__wrapper object {
+  position: absolute;
+  left: 2.4rem;
+  top: 1rem;
+}
+
+.card .input__text {
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: "Space-Mono", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.4rem;
+}
+
+.card .input__text:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.card .btn__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.2rem;
+}
+
+.card .btn {
+  width: 46%;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .btn:hover {
+  background-color: #c5e4e7;
+}
+
+.card .btn .btn__active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .input__custom {
+  width: 46%;
+  border: none;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: "Space-Mono", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.4rem;
+  text-align: center;
+}
+
+.card .input__custom:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.output {
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.2rem;
+}
+
+.output .line__wrapper {
+  color: white;
+}
+
+.output .line__wrapper .line__output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.output .line__wrapper .line__output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.output .line__wrapper .line__output .description {
+  color: #7f9c9f;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.output .line__wrapper .line__output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.output .btn {
+  width: 100%;
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 3.4rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.output .btn:hover {
+  background-color: #c5e4e7;
+}
+
+@media screen and (min-width: 1440px) {
+  .output {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+  }
+  .output .line__wrapper .line__output {
+    margin: 0.5rem 0 2.4rem 0;
+  }
+  .output .line__wrapper .line__output .value {
+    font-size: 4.6rem;
+  }
+  .card {
+    width: 64%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 2.5rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 3.4rem;
+    gap: 1.5rem;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+  }
+  .card .input {
+    width: 105%;
+    padding: 0 3.5rem 1.5rem 1.5rem;
+  }
+  .card .input .label__wrapper {
+    padding: 1rem 0;
+  }
+  .card .input .btn__wrapper .btn {
+    width: 30.5%;
+  }
+  .card .input .btn__wrapper .input__custom {
+    width: 30.5%;
+    text-align: center;
+  }
+}
+
+.attribution {
+  font-size: 2rem;
+  position: absolute;
+  bottom:3rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+
+}
+.attribution a {
+  color:hsl(183, 100%, 15%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 845px), screen and (max-height: 50rem) {
+  .attribution {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

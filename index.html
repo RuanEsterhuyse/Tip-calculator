@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
@@ -15,34 +15,85 @@
 </head>
 <body>
 <main>
-<div class="logo">
-  <img src="./images/logo.svg" alt="logo" class="logo__image">
+  <div class="container">
+    <div class="logo">
+     <img src="./images/logo.svg" alt="logo" class="logo__image">
+   </div>
+
+   <div class="card">
+    <div class="input">
+     <div class="bill__container">
+     <div class="label__wrapper">
+       <label for="input__bill">Bill</label>
+     </div>
+
+     <div class="input__wrapper">
+       <input type="text" class="input__text" name="input__bill" id="input__bill" placeholder="0.0">
+       <object data="../images/icon-dollar.svg" type="image/svg+xml" class="dollar__icon"></object>                                                          
+     </div>
+     </div>
+
+     <div class="tip__container">
+      <div class="label__wrapper">
+        <label for="input__tip">Select Tip %</label>
+      </div>
+      <div class="btn__wrapper">
+      <div class="btn tip">5%</div>
+      <div class="btn tip">10%</div>
+      <div class="btn tip btn__active">15%</div>
+      <div class="btn tip">25%</div>
+      <div class="btn tip">50%</div>
+      <input type="text" class="input__custom" name="input__tip" id="input__tip" placeholder="Custom">
+    </div>
+      </div>
+     
+     <div class="people__container">
+      <div class="label__wrapper">
+        <label for="input__people">Number of People</label>
+        <div class="error__msg">Can't be zero</div>
+      </div>
+
+      <div class="input__wrapper">
+        <input class="input__text" type="text" name="input__people" id="input__people" placeholder="1">
+        <object data="../images/icon-person.svg" type="image/svg+xml" class="person__icon"></object>
+      </div>
+     </div>
+    </div>
+
+    <div class="output">
+      <div class="line__wrapper">
+        <div class="line__output">
+          <div class="title__wrapper">
+            <div class="title">Tip Amount</div>
+            <div class="description">/ person</div>
+          </div>
+          <div class="value">$4.27</div>
+        </div>
+
+        <div class="line__output">
+         <div class="title__wrapper">
+           <div class="title">Total</div>
+           <div class="description">/ person</div>
+         </div>
+         <div class="value">$32.79</div>
+       </div>
+      </div>
+      <div class=" btn reset">Reset</div>
+    </div>
+  </div>
 </div>
+  </div>
 
 
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-</main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/RuanEsterhuyse">Ruan Esterhuyse</a>.
   </footer>
+
+</main>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
